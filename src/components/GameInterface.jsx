@@ -16,6 +16,7 @@ export default function GameInterface() {
     if (game.screen !== 'play' || game.bookOpen) return
 
     game.paused = !game.paused
+    if (game.paused) document.exitPointerLock?.()
     emit()
   }
 
@@ -50,6 +51,7 @@ export default function GameInterface() {
 
           if (!e.repeat) {
             game.paused = !game.paused
+            if (game.paused) document.exitPointerLock?.()
             emit()
           }
         }

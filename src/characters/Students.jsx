@@ -507,7 +507,7 @@ export default function Students() {
   const g = useGame()
 
   useFrame((_, delta) => {
-    if (game.screen === 'menu' || (game.screen === 'play' && game.bookOpen)) return
+    if (game.screen === 'menu' || (game.screen === 'play' && game.bookOpen) || game.paused) return
     const dt = Math.min(0.05, delta)
     game.anim += dt
 

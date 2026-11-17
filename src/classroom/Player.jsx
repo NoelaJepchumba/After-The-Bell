@@ -85,7 +85,7 @@ export default function Player() {
     }
 
     const move = e => {
-      if (game.screen !== 'play' || game.bookOpen) return
+      if (game.screen !== 'play' || game.bookOpen || game.paused) return
 
       if (
         document.pointerLockElement !== el &&
@@ -141,6 +141,7 @@ export default function Player() {
     if (
       game.screen === 'play' &&
       !game.bookOpen &&
+      !game.paused &&
       game.t >= game.frozenUntil
     ) {
       const speed = (k.ShiftLeft ? 4.6 : 3) * dt

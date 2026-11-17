@@ -1,0 +1,244 @@
+{
+  "pbtResults": {},
+  "executionHistory": {
+    "1.1 Add `paused: false` to the object returned by `fresh(T)`": [
+      {
+        "executionId": "64ce3aa1-2dc6-4dd6-b6db-f995611646d3",
+        "chatSessionId": "sess_73f78115-93a6-4ca7-87f2-123137609b41",
+        "timestamp": 1794901183240
+      },
+      {
+        "executionId": "64ce3aa1-2dc6-4dd6-b6db-f995611646d3",
+        "chatSessionId": "sess_73f78115-93a6-4ca7-87f2-123137609b41",
+        "timestamp": 1794901187694
+      },
+      {
+        "executionId": "64ce3aa1-2dc6-4dd6-b6db-f995611646d3",
+        "chatSessionId": "sess_73f78115-93a6-4ca7-87f2-123137609b41",
+        "timestamp": 1794901224430
+      }
+    ],
+    "1.2 Verify restart clears pause (manual check 7)": [
+      {
+        "executionId": "64ce3aa1-2dc6-4dd6-b6db-f995611646d3",
+        "chatSessionId": "sess_73f78115-93a6-4ca7-87f2-123137609b41",
+        "timestamp": 1794901183431
+      },
+      {
+        "executionId": "64ce3aa1-2dc6-4dd6-b6db-f995611646d3",
+        "chatSessionId": "sess_73f78115-93a6-4ca7-87f2-123137609b41",
+        "timestamp": 1794901506305
+      },
+      {
+        "executionId": "64ce3aa1-2dc6-4dd6-b6db-f995611646d3",
+        "chatSessionId": "sess_73f78115-93a6-4ca7-87f2-123137609b41",
+        "timestamp": 1794901642852
+      }
+    ],
+    "2.1 Change the guard from `if (game.screen !== 'play' || game.bookOpen) return` to `if (game.screen !== 'play' || game.bookOpen || game.paused) return`": [
+      {
+        "executionId": "64ce3aa1-2dc6-4dd6-b6db-f995611646d3",
+        "chatSessionId": "sess_73f78115-93a6-4ca7-87f2-123137609b41",
+        "timestamp": 1794901183523
+      },
+      {
+        "executionId": "64ce3aa1-2dc6-4dd6-b6db-f995611646d3",
+        "chatSessionId": "sess_73f78115-93a6-4ca7-87f2-123137609b41",
+        "timestamp": 1794901228546
+      },
+      {
+        "executionId": "64ce3aa1-2dc6-4dd6-b6db-f995611646d3",
+        "chatSessionId": "sess_73f78115-93a6-4ca7-87f2-123137609b41",
+        "timestamp": 1794901480939
+      }
+    ],
+    "2.2 Verify simulation freeze (manual check 1)": [
+      {
+        "executionId": "64ce3aa1-2dc6-4dd6-b6db-f995611646d3",
+        "chatSessionId": "sess_73f78115-93a6-4ca7-87f2-123137609b41",
+        "timestamp": 1794901183622
+      },
+      {
+        "executionId": "64ce3aa1-2dc6-4dd6-b6db-f995611646d3",
+        "chatSessionId": "sess_73f78115-93a6-4ca7-87f2-123137609b41",
+        "timestamp": 1794901511040
+      },
+      {
+        "executionId": "64ce3aa1-2dc6-4dd6-b6db-f995611646d3",
+        "chatSessionId": "sess_73f78115-93a6-4ca7-87f2-123137609b41",
+        "timestamp": 1794901646587
+      }
+    ],
+    "3.1 Change the guard from `if (game.screen === 'menu' || (game.screen === 'play' && game.bookOpen)) return` to `if (game.screen === 'menu' || (game.screen === 'play' && game.bookOpen) || game.paused) return`": [
+      {
+        "executionId": "64ce3aa1-2dc6-4dd6-b6db-f995611646d3",
+        "chatSessionId": "sess_73f78115-93a6-4ca7-87f2-123137609b41",
+        "timestamp": 1794901183727
+      },
+      {
+        "executionId": "64ce3aa1-2dc6-4dd6-b6db-f995611646d3",
+        "chatSessionId": "sess_73f78115-93a6-4ca7-87f2-123137609b41",
+        "timestamp": 1794901232606
+      },
+      {
+        "executionId": "64ce3aa1-2dc6-4dd6-b6db-f995611646d3",
+        "chatSessionId": "sess_73f78115-93a6-4ca7-87f2-123137609b41",
+        "timestamp": 1794901485957
+      }
+    ],
+    "3.2 Verify student freeze (manual check 2)": [
+      {
+        "executionId": "64ce3aa1-2dc6-4dd6-b6db-f995611646d3",
+        "chatSessionId": "sess_73f78115-93a6-4ca7-87f2-123137609b41",
+        "timestamp": 1794901183922
+      },
+      {
+        "executionId": "64ce3aa1-2dc6-4dd6-b6db-f995611646d3",
+        "chatSessionId": "sess_73f78115-93a6-4ca7-87f2-123137609b41",
+        "timestamp": 1794901516332
+      },
+      {
+        "executionId": "64ce3aa1-2dc6-4dd6-b6db-f995611646d3",
+        "chatSessionId": "sess_73f78115-93a6-4ca7-87f2-123137609b41",
+        "timestamp": 1794901650516
+      }
+    ],
+    "4.1 Extend the movement if-block condition: add `&& !game.paused` so it reads `if (game.screen === 'play' && !game.bookOpen && !game.paused && game.t >= game.frozenUntil)`": [
+      {
+        "executionId": "64ce3aa1-2dc6-4dd6-b6db-f995611646d3",
+        "chatSessionId": "sess_73f78115-93a6-4ca7-87f2-123137609b41",
+        "timestamp": 1794901184047
+      },
+      {
+        "executionId": "64ce3aa1-2dc6-4dd6-b6db-f995611646d3",
+        "chatSessionId": "sess_73f78115-93a6-4ca7-87f2-123137609b41",
+        "timestamp": 1794901237740
+      },
+      {
+        "executionId": "64ce3aa1-2dc6-4dd6-b6db-f995611646d3",
+        "chatSessionId": "sess_73f78115-93a6-4ca7-87f2-123137609b41",
+        "timestamp": 1794901490678
+      }
+    ],
+    "4.2 Extend the `mousemove` handler early-return: add `|| game.paused` so it reads `if (game.screen !== 'play' || game.bookOpen || game.paused) return`": [
+      {
+        "executionId": "64ce3aa1-2dc6-4dd6-b6db-f995611646d3",
+        "chatSessionId": "sess_73f78115-93a6-4ca7-87f2-123137609b41",
+        "timestamp": 1794901184164
+      },
+      {
+        "executionId": "64ce3aa1-2dc6-4dd6-b6db-f995611646d3",
+        "chatSessionId": "sess_73f78115-93a6-4ca7-87f2-123137609b41",
+        "timestamp": 1794901242406
+      },
+      {
+        "executionId": "64ce3aa1-2dc6-4dd6-b6db-f995611646d3",
+        "chatSessionId": "sess_73f78115-93a6-4ca7-87f2-123137609b41",
+        "timestamp": 1794901496133
+      }
+    ],
+    "4.3 Verify movement and mouse freeze (manual checks 3 and 4)": [
+      {
+        "executionId": "64ce3aa1-2dc6-4dd6-b6db-f995611646d3",
+        "chatSessionId": "sess_73f78115-93a6-4ca7-87f2-123137609b41",
+        "timestamp": 1794901184269
+      },
+      {
+        "executionId": "64ce3aa1-2dc6-4dd6-b6db-f995611646d3",
+        "chatSessionId": "sess_73f78115-93a6-4ca7-87f2-123137609b41",
+        "timestamp": 1794901520953
+      },
+      {
+        "executionId": "64ce3aa1-2dc6-4dd6-b6db-f995611646d3",
+        "chatSessionId": "sess_73f78115-93a6-4ca7-87f2-123137609b41",
+        "timestamp": 1794901655921
+      }
+    ],
+    "5.1 Add the `document.exitPointerLock?.()` call inside `pauseGame`": [
+      {
+        "executionId": "64ce3aa1-2dc6-4dd6-b6db-f995611646d3",
+        "chatSessionId": "sess_73f78115-93a6-4ca7-87f2-123137609b41",
+        "timestamp": 1794901184361
+      },
+      {
+        "executionId": "64ce3aa1-2dc6-4dd6-b6db-f995611646d3",
+        "chatSessionId": "sess_73f78115-93a6-4ca7-87f2-123137609b41",
+        "timestamp": 1794901247392
+      },
+      {
+        "executionId": "64ce3aa1-2dc6-4dd6-b6db-f995611646d3",
+        "chatSessionId": "sess_73f78115-93a6-4ca7-87f2-123137609b41",
+        "timestamp": 1794901501607
+      }
+    ],
+    "5.2 Verify pointer lock release and keyboard toggle (manual checks 5 and 6)": [
+      {
+        "executionId": "64ce3aa1-2dc6-4dd6-b6db-f995611646d3",
+        "chatSessionId": "sess_73f78115-93a6-4ca7-87f2-123137609b41",
+        "timestamp": 1794901184450
+      },
+      {
+        "executionId": "64ce3aa1-2dc6-4dd6-b6db-f995611646d3",
+        "chatSessionId": "sess_73f78115-93a6-4ca7-87f2-123137609b41",
+        "timestamp": 1794901525440
+      },
+      {
+        "executionId": "64ce3aa1-2dc6-4dd6-b6db-f995611646d3",
+        "chatSessionId": "sess_73f78115-93a6-4ca7-87f2-123137609b41",
+        "timestamp": 1794901665679
+      }
+    ],
+    "6. Checkpoint — verify all five changes together": [
+      {
+        "executionId": "64ce3aa1-2dc6-4dd6-b6db-f995611646d3",
+        "chatSessionId": "sess_73f78115-93a6-4ca7-87f2-123137609b41",
+        "timestamp": 1794901184535
+      },
+      {
+        "executionId": "64ce3aa1-2dc6-4dd6-b6db-f995611646d3",
+        "chatSessionId": "sess_73f78115-93a6-4ca7-87f2-123137609b41",
+        "timestamp": 1794901677139
+      },
+      {
+        "executionId": "64ce3aa1-2dc6-4dd6-b6db-f995611646d3",
+        "chatSessionId": "sess_73f78115-93a6-4ca7-87f2-123137609b41",
+        "timestamp": 1794901730819
+      }
+    ],
+    "1. Initialise `paused` in `GameState.js`": [
+      {
+        "executionId": "64ce3aa1-2dc6-4dd6-b6db-f995611646d3",
+        "chatSessionId": "sess_73f78115-93a6-4ca7-87f2-123137609b41",
+        "timestamp": 1794901642934
+      }
+    ],
+    "2. Freeze the Game Loop in `Simulation.js`": [
+      {
+        "executionId": "64ce3aa1-2dc6-4dd6-b6db-f995611646d3",
+        "chatSessionId": "sess_73f78115-93a6-4ca7-87f2-123137609b41",
+        "timestamp": 1794901646775
+      }
+    ],
+    "3. Freeze student behaviours in `Students.jsx`": [
+      {
+        "executionId": "64ce3aa1-2dc6-4dd6-b6db-f995611646d3",
+        "chatSessionId": "sess_73f78115-93a6-4ca7-87f2-123137609b41",
+        "timestamp": 1794901650613
+      }
+    ],
+    "4. Disable player input in `Player.jsx`": [
+      {
+        "executionId": "64ce3aa1-2dc6-4dd6-b6db-f995611646d3",
+        "chatSessionId": "sess_73f78115-93a6-4ca7-87f2-123137609b41",
+        "timestamp": 1794901656112
+      }
+    ],
+    "5. Release pointer lock on pause in `GameInterface.jsx`": [
+      {
+        "executionId": "64ce3aa1-2dc6-4dd6-b6db-f995611646d3",
+        "chatSessionId": "sess_73f78115-93a6-4ca7-87f2-123137609b41",
+        "timestamp": 1794901665855
+      }
+    ]
+  }
+}

@@ -134,7 +134,9 @@ const fresh = (T) => {
       z: 4.2,
       yaw: 0,
       pitch: 0
-    }
+    },
+
+    paused: false
   }
 }
 

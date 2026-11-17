@@ -18,7 +18,7 @@ const clamp = (v, min, max) => Math.max(min, Math.min(max, v))
 
 export default function Simulation() {
   useFrame((_, delta) => {
-    if (game.screen !== 'play' || game.bookOpen) return
+    if (game.screen !== 'play' || game.bookOpen || game.paused) return
 
     const dt = Math.min(0.05, delta)
 
